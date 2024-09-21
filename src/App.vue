@@ -20,7 +20,7 @@
           <a href="https://www.facebook.com/Fiw.luxU" target="_blank" aria-label="Visit Facebook" class="hover:scale-125 transition-transform duration-300">
             <img src="./assets/facebook-icon.png" alt="Facebook Icon" class="w-10 h-10" />
           </a>
-          <a href="https://line.me" target="_blank" aria-label="Visit Line" class="hover:scale-125 transition-transform duration-300">
+          <a href="https://line.me/ti/p/bS1CX1ewMK" target="_blank" aria-label="Visit Line" class="hover:scale-125 transition-transform duration-300">
             <img src="./assets/line-icon.png" alt="Line Icon" class="w-10 h-10" />
           </a>
         </div>
@@ -100,12 +100,12 @@
   onMounted(() => {
     const handleScroll = () => {
   const carouselPosition = carouselSection.value.getBoundingClientRect().top;
-  const windowHeight = 650;
+  const windowHeight = 640;
 
   console.log('Carousel Position:', carouselPosition);
   console.log('Window Height:', windowHeight);
   
-  if (carouselPosition <= windowHeight * 0.8 && carouselPosition > 0) {
+  if (carouselPosition <= windowHeight) {
     if (!carouselSection.value.classList.contains('opacity-100')) {
       carouselSection.value.classList.add('opacity-100', 'translate-y-0');
       carouselSection.value.classList.remove('opacity-0', 'translate-y-10');
