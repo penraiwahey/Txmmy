@@ -33,9 +33,10 @@
     </div>
 
     <!-- Carousel Section -->
-    <div ref="carouselSection" class="opacity-0 transition-opacity duration-1000 ease-in-out transform translate-y-10 mt-8">
+    <div ref="carouselSection" class="opacity-0 transition-opacity duration-1000 ease-in-out transform translate-y-10 mt-8 w-full max-w-lg">
       <Carousel :items="carouselItems" />
     </div>
+
   </div>
 </template>
 
@@ -97,7 +98,16 @@ onMounted(() => {
 .font-kanit {
   font-family: 'Kanit', sans-serif;
 }
+.carousel {
+  width: 100%; /* Ensure the carousel uses the full width */
+}
 
+.carousel-item {
+  /* Adjust these styles as necessary */
+  flex: 0 0 auto; /* Prevent flex items from growing */
+  width: 90%; /* Default width */
+  max-width: 400px; /* Max width for larger screens */
+}
 .opacity-100 {
   opacity: 1 !important;
 }
