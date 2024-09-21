@@ -1,15 +1,13 @@
 <template>
     <div class="flex flex-col items-center justify-center min-h-screen p-6 bg-gradient-to-br from-purple-300 via-purple-400 to-pink-300">
-      <div class="w-36 h-44"></div>
-      <div class="p-6 text-center font-kanit bg-white bg-opacity-80 rounded-lg shadow-lg">
-        <div class="relative group mb-6 flex justify-center items-center h-48">
-        <img
+      <div class="p-6 text-center font-kanit bg-white bg-opacity-80 rounded-lg shadow-lg mt-32">
+        <div class="relative group mb-6 flex justify-center items-center h-48 mt">
+          <img
             alt="User Avatar for Txmmy Shop"
             class="rounded-full border-4 border-white shadow-xl mb-2 animate-scale"
             src="./assets/user-avatar.jpg"
-        />
+          />
         </div>
-
   
         <h1 class="text-4xl font-bold text-purple-800 mb-1 transition-transform duration-300 hover:scale-105">{{ user.name }}</h1>
         <p class="text-lg text-gray-600 text-center mb-4 px-4 max-w-md transition-opacity duration-300">{{ user.description }}</p>
@@ -37,7 +35,6 @@
       <div ref="carouselSection" class="opacity-0 transition-opacity duration-1000 ease-in-out transform translate-y-10 mt-8 w-full max-w-lg">
         <Carousel :items="carouselItems" />
       </div>
-  
     </div>
   </template>
   
